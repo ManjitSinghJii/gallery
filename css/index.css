@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ddd;
+
+}
+
+#mobile {
+    width:400px;
+    height: 90vh;
+    background: white;
+    margin: 0 auto;
+    border-top: 40px groove #FBB03B;
+    border-bottom: 40px groove #FBB03B;
+    border-radius: 40px;
+    box-shadow: 0 0 10px 0 gray;
+    position: relative;
+}
+
+#container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px;
+    background: white;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.image {
+    width: calc(50% - 8px);
+    background: white;
+    border: 1px solid #ccc;
+    padding: 0;
+    box-shadow: 0 0 5px 0 gray;
+    position: relative;
+
+}
+
+.image img {
+    width: 100%;
+}
+
+#upload-btn {
+    width: 80px;
+    height: 80px;
+    background: white;
+    box-shadow: 0 0 10px 0 gray;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#upload-btn span {
+    font-size: 48px;
+    color: #323232;
+}
+
+#upload-input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: Verdana;
+    color: #303F9F;
+}
+
+.action {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icon-button {
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #FBB03B;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+}
